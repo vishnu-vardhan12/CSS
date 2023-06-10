@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List with Star Bullets</title>
+  <style>
+    ul.star-list {
+      list-style-type: none;
+      padding-left: 1.5em;
+    }
+
+    ul.star-list li {
+      position: relative;
+      padding-left: 1em;
+    }
+
+    ul.star-list li:before {
+      content: "";
+      position: absolute;
+      top: 0.2em;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      background-image: url('star.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  </style>
+</head>
+<body>
+  <ul class="star-list" style="position: fixed;top: 100px; left: 600px;">
+    <li><h3>Hummus</h3></li>
+    <li><h3>Pita</h3></li>
+    <li><h3>Green salad</h3></li>
+    <li><h3>Hallaumi</h3></li>
+  </ul>
+</body>
+</html>
